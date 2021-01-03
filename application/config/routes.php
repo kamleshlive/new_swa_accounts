@@ -52,4 +52,5 @@ $route['resetpassword'] = "Register_ctr/index";
 $route['login']="Register_ctr/login";
 
 $route['reset_password']="Reset_password/reset_update";
+$route['reset']="Reset_password/resetPassword";
 

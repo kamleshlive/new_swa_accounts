@@ -28,8 +28,9 @@
     
     <div class="card-body login-card-body">
       <p class="login-box-msg">Swa Members</p>
-
-      <form action=""  method="post" name="form-validation">
+      <?php echo $this->session->flashdata('success_msg');?>
+      <?php echo $this->session->flashdata('error_msg');?>
+      <form action="<?=base_url('login');?>"  method="post" name="form-validation">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email" name="email" id="email">
           <div class="input-group-append">
@@ -81,7 +82,7 @@
 
       <div class="social-auth-links text-center mb-3">
         <p>- OR -</p>
-        <a href="<?php echo site_url('Reset_password/reset_update'); ?>" class="btn btn-block btn-primary">
+        <a href="<?php echo base_url('reset'); ?>" class="btn btn-block btn-primary">
               Reset Password
         </a>
        <!--  <a href="<?php echo base_url()."assets/"; ?>#" class="btn btn-block btn-danger">

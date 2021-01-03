@@ -55,7 +55,7 @@
        
 
       <div class="social-auth-links text-center mb-3">
-        <p>- OR -</p>
+        <!-- <p>- OR -</p> -->
         
       
       <button type="submit" value="reset" name="reset_password" class="btn btn-block btn-primary">  Reset Password </button>
